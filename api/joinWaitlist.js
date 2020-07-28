@@ -1,6 +1,7 @@
 const axios = require("axios");
+const cors = require('micro-cors')()
 
-module.exports = (req, res) => {
+const handler = (req, res) => {
   const email = req.body.email;
 
   const headers = {
@@ -32,3 +33,5 @@ module.exports = (req, res) => {
     })
 
 }
+
+module.exports = cors(handler)

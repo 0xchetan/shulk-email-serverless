@@ -8,6 +8,7 @@
     "axios": "^0.19.2",
     "cors": "^2.8.5",
     "mailchimp-api-v3": "^1.14.0",
+    "micro-cors": "^0.1.1",
     "request": "^2.88.2"
   }
 }
