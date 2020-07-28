@@ -3,5 +3,10 @@
   "version": "1.0.0",
   "description": "Serverless function to get emails",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "mailchimp-api-v3": "^1.14.0",
+    "request": "^2.88.2"
+  }
 }
