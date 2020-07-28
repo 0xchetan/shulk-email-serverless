@@ -15,7 +15,8 @@ module.exports = (req, res) => {
 
   const body = {
     updateEnabled: false,
-    email: email
+    email: email,
+    listIds: [5]
   };
 
   const data = JSON.stringify(body);
