@@ -2,6 +2,12 @@ const axios = require("axios");
 const cors = require('micro-cors')()
 
 const handler = (req, res) => {
+
+
+  if (req.method === "OPTIONS") {
+    return res.status(200).end();
+  }
+  
   const email = req.body.email;
 
   const headers = {
